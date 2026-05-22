@@ -8,7 +8,7 @@ sdk_version: "6.0.0"
 python_version: "3.11"
 app_file: app.py
 pinned: false
-short_description: Tokenization, next-token prediction, and decoding demos (GPT-2 on CPU).
+short_description: GPT-2 tokenization, next-token, and decoding demos.
 models:
   - openai-community/gpt2
 ---
