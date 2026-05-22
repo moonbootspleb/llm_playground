@@ -1,3 +1,18 @@
+---
+title: LLM Playground
+emoji: 🌙
+colorFrom: gray
+colorTo: blue
+sdk: gradio
+sdk_version: "6.0.0"
+python_version: "3.11"
+app_file: app.py
+pinned: false
+short_description: Tokenization, next-token prediction, and decoding demos (GPT-2 on CPU).
+models:
+  - openai-community/gpt2
+---
+
 # LLM Playground — Hugging Face Space
 
 Gradio app for interactive portfolio demos (tokenizer explorer, next-token microscope, greedy vs top-p, decoding playground).
