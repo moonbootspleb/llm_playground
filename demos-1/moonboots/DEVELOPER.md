@@ -7,7 +7,7 @@ This repo is the **hosted Gradio app** for interactive portfolio demos. Open thi
 | **Space** | [moonbootspleb/moonboots](https://huggingface.co/spaces/moonbootspleb/moonboots) |
 | **Public URL** | https://huggingface.co/spaces/moonbootspleb/moonboots |
 | **SDK** | Gradio on CPU (free tier) |
-| **Local clone** | `BYTEBTYEGO/demos-1/moonboots` |
+| **Source in GitHub** | `demos-1/moonboots/` in [llm_playground](https://github.com/moonbootspleb/llm_playground) |
 
 ---
 
@@ -42,7 +42,7 @@ flowchart LR
 
 | Repo | Path on disk | You edit |
 |------|----------------|----------|
-| **This folder (Space)** | `space/` in [llm_playground](https://github.com/moonbootspleb/llm_playground) | `app.py`, `requirements.txt`, push to HF |
+| **This folder (Space)** | `demos-1/moonboots/` in [llm_playground](https://github.com/moonbootspleb/llm_playground) | `app.py`, `requirements.txt`, push to HF |
 | **Lab** | This repo (root) | `llm_playground.ipynb`, `portfolio/demos/*.md` |
 | **Site** | `moonboots/COMPANYSITE` | React + `VITE_LLM_PLAYGROUND_SPACE_URL` (later) |
 
@@ -164,6 +164,8 @@ demo.launch()
 ```
 
 **Portfolio embed:** One iframe URL points at this Space; visitors switch tabs inside Gradio. Do not create three separate iframes (triple cold start).
+
+**Company site:** [moonboots.tech](https://moonboots.tech) lazy-loads the embed (scroll-near or explicit load) and unmounts when far off-screen. On the **Tokens** tab, tokenization runs on **Tokenize** / `demo.load` / Examples—not on every `Textbox` keystroke (`tok_inp.change` removed for CPU). Redeploy this Space after changing `app.py` so production matches.
 
 ---
 
@@ -339,7 +341,7 @@ Route (planned): `/work/llm-playground`
 
 ## Using this guide in Cursor
 
-1. Open workspace folder: `BYTEBTYEGO/demos-1/moonboots` (this repo).
+1. Open workspace folder: `demos-1/moonboots/` in the llm_playground repo (this folder).
 2. Reference `@DEVELOPER.md` in chat when editing `app.py`.
 3. Open the relevant spec under `project_1/portfolio/demos/` for the tab you are building.
 

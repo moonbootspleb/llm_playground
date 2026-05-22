@@ -314,7 +314,6 @@ with demo:
             tok_out = gr.HTML()
             tok_btn = gr.Button("Tokenize", variant="primary")
             tok_btn.click(tokenize_compare, inputs=tok_inp, outputs=tok_out)
-            tok_inp.change(tokenize_compare, inputs=tok_inp, outputs=tok_out)
             demo.load(tokenize_compare, inputs=tok_inp, outputs=tok_out)
             gr.Examples(examples=TOKEN_EXAMPLES, inputs=tok_inp)
 

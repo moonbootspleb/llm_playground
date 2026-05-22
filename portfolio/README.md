@@ -62,7 +62,7 @@ Legacy: `/work/llm-playground` → Part 1 `#live-demo`; `/work/llm-playground/pr
 |----------|-----|
 | Blog index | `https://moonboots.tech/blog` |
 | HF Space (Gradio) | https://huggingface.co/spaces/moonbootspleb/moonboots |
-| Space developer guide | [space/DEVELOPER.md](../space/DEVELOPER.md) |
+| Space developer guide | [demos-1/moonboots/DEVELOPER.md](../demos-1/moonboots/DEVELOPER.md) |
 | COMPANYSITE repo | `MOONBOOTS/COMPANYSITE` |
 | Google Colab | Set `VITE_COLAB_NOTEBOOK_URL` on Vercel |
 | GitHub | https://github.com/moonbootspleb/llm_playground — set `VITE_LLM_PLAYGROUND_GITHUB_URL` on Vercel |

@@ -36,7 +36,8 @@ Detailed specs for each planned demo live in [`portfolio/demos/`](portfolio/demo
 | `environment.yaml` | Conda environment (`llm_playground`) |
 | `requirements.txt` | Python dependencies for local / uv setup |
 | `env.sh` | Project-local `uv` and venv paths (source from repo root) |
-| `space/` | Hugging Face Gradio app (Tokens, NextToken, Decoding, Playground tabs); deploy to [moonbootspleb/moonboots](https://huggingface.co/spaces/moonbootspleb/moonboots) |
+| `demos-1/moonboots/` | Hugging Face Gradio app (Tokens, NextToken, Decoding, Playground tabs); deploy to [moonbootspleb/moonboots](https://huggingface.co/spaces/moonbootspleb/moonboots) |
+| `demos-1/README.md` | Space folder index and HF deploy notes |
 
 **Stack:** Python 3.11, PyTorch, Hugging Face Transformers, `tiktoken`, JupyterLab, optional `ipywidgets` for the playground UI.
 
@@ -95,19 +96,19 @@ These demos will be **hosted on a personal portfolio site**—not only documente
 
 | Demo | Tier | Type | Notebook | Spec | Status |
 |------|------|------|----------|------|--------|
-| [Tokenizer explorer](portfolio/demos/tokenizer-explorer.md) | 1 | Interactive | §1.3–1.4 | [spec](portfolio/demos/tokenizer-explorer.md) | done |
-| [Next-token microscope](portfolio/demos/next-token-microscope.md) | 1 | Interactive | §2.3 | [spec](portfolio/demos/next-token-microscope.md) | planned |
-| [Greedy vs top-p](portfolio/demos/greedy-vs-top-p.md) | 1 | Interactive | §3.1–3.2 | [spec](portfolio/demos/greedy-vs-top-p.md) | planned |
-| [GPT-2 vs Qwen](portfolio/demos/gpt2-vs-qwen.md) | 1 | Write-up + comparison | §4.1–4.2 | [spec](portfolio/demos/gpt2-vs-qwen.md) | planned |
-| [Tokenization ladder](portfolio/demos/tokenization-ladder.md) | 2 | Interactive / static | §1.1–1.3 | [spec](portfolio/demos/tokenization-ladder.md) | planned |
-| [Parameter scale calculator](portfolio/demos/parameter-scale-calculator.md) | 2 | Interactive | §2.2 | [spec](portfolio/demos/parameter-scale-calculator.md) | planned |
-| [Transformer block diagram](portfolio/demos/transformer-block-diagram.md) | 2 | Static | §2.1 | [spec](portfolio/demos/transformer-block-diagram.md) | planned |
-| [Decoding playground](portfolio/demos/decoding-playground.md) | 2 | Interactive | §5 | [spec](portfolio/demos/decoding-playground.md) | planned |
-| [Pipeline story](portfolio/demos/pipeline-story.md) | 3 | Static scroll | Full arc | [spec](portfolio/demos/pipeline-story.md) | planned |
-| [Demo walkthrough video](portfolio/demos/demo-walkthrough-video.md) | 3 | Video | §1–4 | [spec](portfolio/demos/demo-walkthrough-video.md) | planned |
-| [Failure modes gallery](portfolio/demos/failure-modes-gallery.md) | 3 | Static gallery | §1.1, §3.1, §4.2 | [spec](portfolio/demos/failure-modes-gallery.md) | planned |
+| [Tokenizer explorer](portfolio/demos/tokenizer-explorer.md) | 1 | Interactive (Space **Tokens**) | §1.3–1.4 | [spec](portfolio/demos/tokenizer-explorer.md) | done |
+| [Next-token microscope](portfolio/demos/next-token-microscope.md) | 1 | Interactive (Space **NextToken**) | §2.3 | [spec](portfolio/demos/next-token-microscope.md) | done |
+| [Greedy vs top-p](portfolio/demos/greedy-vs-top-p.md) | 1 | Interactive (Space **Decoding**) | §3.1–3.2 | [spec](portfolio/demos/greedy-vs-top-p.md) | done |
+| [GPT-2 vs Qwen](portfolio/demos/gpt2-vs-qwen.md) | 1 | Write-up + static (blog Part 2) | §4.1–4.2 | [spec](portfolio/demos/gpt2-vs-qwen.md) | done |
+| [Tokenization ladder](portfolio/demos/tokenization-ladder.md) | 2 | React (blog Part 3) | §1.1–1.3 | [spec](portfolio/demos/tokenization-ladder.md) | done |
+| [Parameter scale calculator](portfolio/demos/parameter-scale-calculator.md) | 2 | React (blog Part 3) | §2.2 | [spec](portfolio/demos/parameter-scale-calculator.md) | done |
+| [Transformer block diagram](portfolio/demos/transformer-block-diagram.md) | 2 | Static SVG (blog Part 3) | §2.1 | [spec](portfolio/demos/transformer-block-diagram.md) | done |
+| [Decoding playground](portfolio/demos/decoding-playground.md) | 2 | Interactive (Space **Playground**) | §5 | [spec](portfolio/demos/decoding-playground.md) | done |
+| [Pipeline story](portfolio/demos/pipeline-story.md) | 3 | Static scroll (blog Part 4) | Full arc | [spec](portfolio/demos/pipeline-story.md) | done |
+| [Demo walkthrough video](portfolio/demos/demo-walkthrough-video.md) | 3 | Video placeholder (blog Part 4) | §1–4 | [spec](portfolio/demos/demo-walkthrough-video.md) | placeholder |
+| [Failure modes gallery](portfolio/demos/failure-modes-gallery.md) | 3 | Static gallery (blog Part 4) | §1.1, §3.1, §4.2 | [spec](portfolio/demos/failure-modes-gallery.md) | done |
 
-For the full index, site flow, and build phases, see [portfolio/README.md](portfolio/README.md).
+For the full index, blog mapping, and build phases, see [portfolio/README.md](portfolio/README.md).
 
 ## License
 

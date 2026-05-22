@@ -41,7 +41,7 @@ Inference is configurable: token count, greedy vs sampling, and `top_p`. Same AP
 ```text
 Step 1  Notebook — one generate() helper (copy-paste below)
 Step 2  Notebook — optional ipywidgets (quick win in Jupyter)
-Step 3  Gradio — Playground tab in project_1/space/
+Step 3  Gradio — Playground tab in demos-1/moonboots/
 Step 4  Hugging Face Space — deploy and copy URL
 Step 5  COMPANYSITE — #playground section + env var
 ```
@@ -144,18 +144,18 @@ from IPython.display import display, Markdown
 
 ---
 
-## Step 3 — Gradio tab in `project_1/space/` (1–2 hours)
+## Step 3 — Gradio tab in `demos-1/moonboots/` (1–2 hours)
 
-If `space/` does not exist yet, create it at the **lab repo root**:
+The Space app lives at **`demos-1/moonboots/`** in the lab repo:
 
 ```text
-project_1/
-  space/
+llm_playground/
+  demos-1/moonboots/
     app.py
     requirements.txt
 ```
 
-### `space/requirements.txt`
+### `demos-1/moonboots/requirements.txt`
 
 ```text
 torch>=2.10.0
@@ -217,7 +217,7 @@ python app.py
 ## Step 4 — Deploy to Hugging Face Space (30 min)
 
 1. Create a new Space on [huggingface.co/spaces](https://huggingface.co/spaces): **SDK = Gradio**, hardware **CPU** (free tier).
-2. Push `space/app.py` + `space/requirements.txt` (or connect GitHub repo subfolder).
+2. Push `demos-1/moonboots/app.py` + `requirements.txt` to the HF Space (or connect this GitHub subfolder).
 3. Wait for build; open the Space URL.
 4. Test Playground tab on the live URL.
 

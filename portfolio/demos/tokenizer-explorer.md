@@ -32,7 +32,7 @@ Models do not read words or characters directly; they read **token IDs**. Differ
 |--------------|--------|
 | §1.3–1.4 concepts (or reference cells below) | [`llm_playground.ipynb`](../../llm_playground.ipynb) |
 | `tiktoken` + `transformers` | [`requirements.txt`](../../requirements.txt) |
-| HF Space clone (optional) | [`demos-1/moonboots`](../../../demos-1/moonboots) |
+| HF Space source | [`demos-1/moonboots`](../../demos-1/moonboots) in this repo |
 
 **Time estimate:** ~2–3 hours (notebook cells → HTML chips in Gradio → push Space → COMPANYSITE section).
 
@@ -99,7 +99,7 @@ for name, enc in [("tiktoken gpt2", enc_gpt2), ("tiktoken cl100k_base", enc_cl10
 
 ## Step 2 — Core helpers (45 min)
 
-Implement in [`demos-1/moonboots/app.py`](../../../demos-1/moonboots/app.py) (single source of truth for the Space).
+Implement in [`demos-1/moonboots/app.py`](../../demos-1/moonboots/app.py) (single source of truth for the Space).
 
 ```python
 import html
@@ -146,7 +146,7 @@ def render_token_explorer(columns: list[TokenColumn]) -> str:
 
 ## Step 3 — Gradio Tokens tab (1 hour)
 
-Repo: **`BYTEBTYEGO/demos-1/moonboots`** (not `project_1/space/`).
+Repo: **`demos-1/moonboots/`** in [llm_playground](https://github.com/moonbootspleb/llm_playground).
 
 ### `requirements.txt`
 
@@ -189,7 +189,7 @@ with gr.Tab("Tokens"):
 **Local test:**
 
 ```bash
-cd BYTEBTYEGO/demos-1/moonboots
+cd demos-1/moonboots
 pip install -r requirements.txt
 python app.py
 ```
@@ -204,7 +204,7 @@ python app.py
 ## Step 4 — Deploy to Hugging Face Space (30 min)
 
 ```bash
-cd BYTEBTYEGO/demos-1/moonboots
+cd demos-1/moonboots
 git add app.py requirements.txt
 git commit -m "Tokens tab: HTML chips, three encoders, four presets"
 git push
@@ -299,7 +299,7 @@ Use in [pipeline-story.md](pipeline-story.md) step 2 and [tokenization-ladder.md
 ## Definition of done
 
 - [x] [`tokenizer-explorer.md`](tokenizer-explorer.md) matches decoding-playground depth
-- [x] Spec references `demos-1/moonboots` (not `project_1/space/`)
+- [x] Spec references `demos-1/moonboots/` in llm_playground
 - [x] Tokens tab: 3 encoders, HTML chips, ID details, 4 presets, live update
 - [x] HF Space URL in [portfolio/README.md](../README.md)
 - [x] COMPANYSITE `#interactive-demos` + `SpaceEmbed` + `.env.example`
@@ -311,7 +311,7 @@ Use in [pipeline-story.md](pipeline-story.md) step 2 and [tokenization-ladder.md
 ## Reference links
 
 - Lab notebook: [llm_playground.ipynb](../../llm_playground.ipynb) §1.3–1.4
-- Space developer guide: [demos-1/moonboots/DEVELOPER.md](../../../demos-1/moonboots/DEVELOPER.md) — Milestone 1
+- Space developer guide: [demos-1/moonboots/DEVELOPER.md](../../demos-1/moonboots/DEVELOPER.md) — Milestone 1
 - [tiktoken](https://github.com/openai/tiktoken)
 - [GPT-2 tokenizer (HF)](https://huggingface.co/docs/transformers/en/model_doc/gpt2)
 - Related: [tokenization-ladder.md](tokenization-ladder.md) (shared chip style)
